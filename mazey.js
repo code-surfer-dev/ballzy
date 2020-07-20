@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById('main');
 canvas.setAttribute('width', window.innerWidth);
-canvas.setAttribute('height', innerHeight);
+canvas.setAttribute('height', window.innerHeight);
 
 const ctx = canvas.getContext('2d');
 
@@ -59,16 +59,16 @@ function clrscr() {
 }
 
 function draw() {
-	clrscr();
+//	clrscr();
 
 	balls.forEach(ball => ball.draw());
 	requestAnimationFrame(draw);
 }
 
 const balls = [];
-for (let count = 1; count <= 20; count++) {
-	const minSize = 15;
-	const variation = 10;
+for (let count = 1; count <= 1; count++) {
+	const minSize = 5;
+	const variation = 40;
 	const radius = (Math.random() * variation) + minSize;
 	const maxVelocity = variation - radius;
 	const x = Math.random() * (canvas.width - 2 * radius) + radius;
