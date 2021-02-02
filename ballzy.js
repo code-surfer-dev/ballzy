@@ -66,7 +66,7 @@ function draw() {
 }
 
 const balls = [];
-for (let count = 1; count <= 1; count++) {
+for (let count = 1; count <= 100; count++) {
 	const minSize = 5;
 	const variation = 40;
 	const radius = (Math.random() * variation) + minSize;
